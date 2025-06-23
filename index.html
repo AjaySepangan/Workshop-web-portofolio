@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Ajay Sepangan</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="images/profile picture.jpg" alt="Foto Profil" class="profile-photo" />
+            <h1>Ajay Sepangan</h1>
+            <p>Front-End Developer | UI/UX Designer</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#projects">Projek</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah seorang Front-End Developer dengan minat besar dalam desain UI/UX yang modern, minimalis, dan
+                berfokus pada pengalaman pengguna. Saya percaya bahwa antarmuka yang baik tidak hanya indah secara
+                visual, tetapi juga intuitif dan fungsional.
+                Dengan latar belakang dalam pengembangan web responsif dan interaktif, saya senang mengubah ide menjadi
+                tampilan digital yang menarik menggunakan teknologi seperti HTML, CSS, JavaScript, serta framework
+                modern seperti React atau Tailwind CSS. Saya selalu terbuka untuk tantangan baru dan terus belajar untuk
+                menciptakan solusi digital yang lebih baik.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projek</h2>
+            <div class="project">
+                <h3>Website Portfolio Pribadi</h3>
+                <p>Sebuah website portofolio yang dirancang dengan pendekatan modern dan minimalis, menggunakan
+                    kombinasi warna emas dan hitam untuk memberikan kesan elegan. Dibangun dengan HTML, CSS, dan
+                    JavaScript, website ini sepenuhnya responsif dan memuat informasi tentang profil, projek, serta form
+                    kontak yang berfungsi. Desain fokus pada user experience (UX) agar pengunjung mudah menavigasi dan
+                    menemukan informasi penting.</p>
+            </div>
+            <div class="project">
+                <h3>Aplikasi To-Do List Sederhana</h3>
+                <p>Aplikasi manajemen tugas berbasis web dengan fitur tambah, hapus, dan tandai tugas selesai. Dibangun
+                    menggunakan JavaScript murni (vanilla JS), aplikasi ini memiliki antarmuka yang bersih dan ringan.
+                    Didesain untuk digunakan pada perangkat mobile maupun desktop, dengan struktur kode yang mudah
+                    dikembangkan lebih lanjut.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Kontak</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Nama Anda" required />
+                <input type="email" id="email" placeholder="Email Anda" required />
+                <textarea id="message" placeholder="Pesan" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+            <p id="formMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ajay Sepangan</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

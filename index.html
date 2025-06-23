@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio Ajay Sepangan</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
     <header>
-        <div class="container">
+        <div class="container header-content">
             <img src="images/profile picture.jpg" alt="Foto Profil" class="profile-photo" />
-            <h1>Ajay Sepangan</h1>
-            <p>Front-End Developer | UI/UX Designer</p>
+            <div>
+                <h1>Ajay Sepangan</h1>
+                <p>Front-End Developer & UI/UX Design</p>
+            </div>
         </div>
     </header>
 
@@ -25,51 +29,65 @@
         </ul>
     </nav>
 
-    <main>
+    <main class="container">
         <section id="about">
             <h2>Tentang Saya</h2>
-            <p>Saya adalah seorang Front-End Developer dengan minat besar dalam desain UI/UX yang modern, minimalis, dan
-                berfokus pada pengalaman pengguna. Saya percaya bahwa antarmuka yang baik tidak hanya indah secara
-                visual, tetapi juga intuitif dan fungsional.
-                Dengan latar belakang dalam pengembangan web responsif dan interaktif, saya senang mengubah ide menjadi
-                tampilan digital yang menarik menggunakan teknologi seperti HTML, CSS, JavaScript, serta framework
-                modern seperti React atau Tailwind CSS. Saya selalu terbuka untuk tantangan baru dan terus belajar untuk
-                menciptakan solusi digital yang lebih baik.</p>
+            <p>
+                Saya adalah <strong>Front-End Developer</strong> yang antusias terhadap <strong>desain UI/UX yang elegan
+                    dan minimalis</strong>.
+                Fokus saya adalah menciptakan antarmuka yang tidak hanya indah, tapi juga fungsional dan intuitif. Saya
+                terbiasa menggunakan teknologi seperti <strong>HTML, CSS, JavaScript</strong>, dan terus belajar
+                teknologi baru untuk menciptakan pengalaman pengguna yang luar biasa.
+            </p>
         </section>
 
         <section id="projects">
             <h2>Projek</h2>
-            <div class="project">
-                <h3>Website Portfolio Pribadi</h3>
-                <p>Sebuah website portofolio yang dirancang dengan pendekatan modern dan minimalis, menggunakan
-                    kombinasi warna emas dan hitam untuk memberikan kesan elegan. Dibangun dengan HTML, CSS, dan
-                    JavaScript, website ini sepenuhnya responsif dan memuat informasi tentang profil, projek, serta form
-                    kontak yang berfungsi. Desain fokus pada user experience (UX) agar pengunjung mudah menavigasi dan
-                    menemukan informasi penting.</p>
+            <div class="project-card">
+                <h3>Website Portofolio</h3>
+                <p>Website portofolio yang responsif dengan tema warna emas elegan, dirancang untuk menampilkan
+                    informasi profesional secara menarik dan terstruktur. Dibangun menggunakan HTML, CSS, dan JavaScript
+                    dengan fokus pada tampilan modern, performa ringan, serta kompatibilitas lintas perangkat.
+
+                </p>
             </div>
-            <div class="project">
-                <h3>Aplikasi To-Do List Sederhana</h3>
-                <p>Aplikasi manajemen tugas berbasis web dengan fitur tambah, hapus, dan tandai tugas selesai. Dibangun
-                    menggunakan JavaScript murni (vanilla JS), aplikasi ini memiliki antarmuka yang bersih dan ringan.
-                    Didesain untuk digunakan pada perangkat mobile maupun desktop, dengan struktur kode yang mudah
-                    dikembangkan lebih lanjut.</p>
+            <div class="project-card">
+                <h3>Aplikasi To-Do List</h3>
+                <p>Aplikasi web sederhana untuk mencatat dan mengelola daftar tugas harian secara efisien. Dirancang
+                    dengan antarmuka yang bersih, ringan, dan mudah digunakan. Sepenuhnya responsif, sehingga cocok
+                    diakses melalui perangkat mobile maupun desktop.</p>
             </div>
         </section>
 
         <section id="contact">
-            <h2>Kontak</h2>
+            <h2>Hubungi Saya</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="azaysepong@gmail.com">azaysepong@gmail.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ajay-sepangan-09220332a/"
+                        target="_blank">linkedin.com/in/ajaysepangan</a></p>
+            </div>
+
             <form id="contactForm">
-                <input type="text" id="name" placeholder="Nama Anda" required />
-                <input type="email" id="email" placeholder="Email Anda" required />
-                <textarea id="message" placeholder="Pesan" required></textarea>
-                <button type="submit">Kirim</button>
+                <div class="form-group">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" placeholder="Nama Anda" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email aktif" required />
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" placeholder="Tulis pesan Anda..." required></textarea>
+                </div>
+                <button type="submit">Kirim Pesan</button>
+                <p id="formMessage"></p>
             </form>
-            <p id="formMessage"></p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Ajay Sepangan</p>
+        <p>&copy; 2025 Ajay Sepangan. Dibuat dengan sepenuh hati ✨</p>
     </footer>
 
     <script src="script.js"></script>
